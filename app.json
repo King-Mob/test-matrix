@@ -1,0 +1,12 @@
+{
+  "name": "test-matrix",
+  "displayName": "test-matrix",
+  "expo": {
+    "name": "test-matrix",
+    "slug": "test-matrix",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
