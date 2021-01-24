@@ -26,5 +26,7 @@ export default UserInfo = {
     userId: "@myusername:example.homeserver.com"
 }
 `
+
 5. npx react-native run-android (or your command equivalent)
 
+6. Mess around with the matrix js-sdk: https://matrix.org/docs/guides/usage-of-the-matrix-js-sdk
