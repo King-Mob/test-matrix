@@ -5,10 +5,12 @@
     "ios": "react-native run-ios",
     "web": "expo start --web",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "postinstall": "sed -i '' '$s/}/,\"browser\":{\"fs\":\"react-native-level-fs\"}}/' node_modules/olm/package.json"
   },
   "dependencies": {
     "@expo/browser-polyfill": "^0.1.1",
+    "@rn-matrix/core": "^0.0.32",
     "buffer": "^6.0.3",
     "events": "^3.2.0",
     "expo": "~40.0.0",

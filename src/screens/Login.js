@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { StyleSheet, Text, TextInput, View, TouchableOpacity } from 'react-native';
 import {tryLogin} from '../api';
+import {doStuff} from '../api/auth';
 
 export const Login = () => {
     const [username, setUsername] = useState("test user");
@@ -29,6 +30,13 @@ export const Login = () => {
                 <Text>Login</Text>
             </View>
         </TouchableOpacity>
+        <TouchableOpacity
+            onPress={()=>tryLogin(username,password)}
+        >
+            <View style={styles.doButton}>
+                <Text style={styles.doText}>do Stuff</Text>
+            </View>
+        </TouchableOpacity>
     </View>
 }
 
@@ -37,4 +45,10 @@ const styles = StyleSheet.create({
       display: 'flex',
       flexDirection: 'row'
     },
+    doText:{
+        color: "white"
+    },
+    doButton: {
+        backgroundColor: "black"
+    }
   });
